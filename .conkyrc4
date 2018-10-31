@@ -1,0 +1,58 @@
+background yes
+font LiberationMono:size=9
+#xftfont Sans:size=10
+#xftfont LiberationSans:size=8
+use_xft yes
+#xftalpha 0.1
+#text_buffer_size 2048
+update_interval 3.0
+total_run_times 0
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 560 500
+maximum_width 560
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color black
+default_outline_color green
+alignment top_right
+gap_x 1850
+gap_y 50
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+uppercase no # set to yes if you want all text to be in uppercase
+
+####
+## My colors.
+#
+color0 White
+color1 Ivory
+color2 Ivory2
+color3 Ivory3
+color4 Tan1
+color5 Tan2
+color6 Gray
+color7 AntiqueWhite4
+color8 DarkSlateGray
+color9 Black
+
+
+TEXT
+${color4}NEWS ${color8}${hr 2}${color0}
+
+GOOGLE NEWS${color6}
+${rss https://news.google.com/news/rss/?hl=en&gl=US&ceid=US:en&ned=us 5 item_titles 10}
+
+${color0}ESPN FC${color6}
+${rss https://www.espnfc.com/rss 30 item_titles 5}
+
+${color0}MLS NEWS${color6}
+${rss http://www.mlssoccer.com/rss.xml 30 item_titles 5}
