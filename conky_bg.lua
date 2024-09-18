@@ -15,7 +15,7 @@ corner_r=45
 
 bg_colour=0x000000
 
-bg_alpha=0.5
+bg_alpha=0.3
 
 
 function rgb_to_r_g_b(colour,alpha)
